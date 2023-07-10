@@ -26,20 +26,29 @@
         />
       </div>
       <div class="q-mt-md q-pt-none">
-        <q-btn color="purple-14" class="full-width rounded-bold" label="Add todo" />
+        <q-btn @click="SaveTodo()" color="purple-14" class="full-width rounded-bold" label="Add todo" />
       </div>
 </template>
 
 <script lang="ts">
 import { defineComponent, ref, Ref } from 'vue'
+import { useTodoStore } from 'src/stores/todo'
+
 export default defineComponent({
   name: 'AddTodo',
   setup () {
+    const store = useTodoStore()
     const name: Ref<string> = ref('')
     const category: Ref<string> = ref('personal')
+
+    function SaveTodo () {
+      let data = { name: name.value, category: category.value }
+      store.addTodo(data)
+    }
     return {
       name,
-      category
+      category,
+      SaveTodo
     }
   }
 })
