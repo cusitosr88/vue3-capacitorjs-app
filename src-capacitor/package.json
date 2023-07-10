@@ -1,0 +1,13 @@
+{
+  "name": "vue3-capacitor-app",
+  "version": "0.0.1",
+  "description": "A Todo list app, with Vue3 and Capacitor",
+  "author": "Javier Suarez <cusitosr88@gmail.com>",
+  "private": true,
+  "dependencies": {
+    "@capacitor/android": "^5.1.1",
+    "@capacitor/app": "^5.0.0",
+    "@capacitor/cli": "^5.0.0",
+    "@capacitor/core": "^5.0.0"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "appId": "com.vuecapacitor.app",
+  "appName": "TodoList",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www",
+  "server": {
+    "androidScheme": "https"
+  }
+}
