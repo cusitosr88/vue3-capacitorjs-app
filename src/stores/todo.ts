@@ -1,7 +1,16 @@
 import { defineStore } from 'pinia';
+import { Todo } from 'src/components/models';
 
-export const useCounterStore = defineStore('todo', {
-  state: () => ({
+interface TodoStore {
+  todos: Todo[];
+}
+export const useTodoStore = defineStore('todo', {
+  state: (): TodoStore => ({
     todos: []
-  })
+  }),
+  actions: {
+    addTodo(todo: Todo) {
+      this.todos.push(todo);
+    }
+  }
 });
