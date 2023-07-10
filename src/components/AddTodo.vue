@@ -4,7 +4,7 @@
         v-model="name"
         color="white"
         outlined
-        class="text-white q-mt-sm"
+        class="text-white q-mt-sm rounded-bold"
       />
       <div class="q-py-md text-blue-9 text-uppercase text-bold">Categories</div>
       <div class="q-gutter-sm">
@@ -26,7 +26,7 @@
         />
       </div>
       <div class="q-mt-md q-pt-none">
-        <q-btn color="purple-14" class="full-width" label="Add todo" />
+        <q-btn color="purple-14" class="full-width rounded-bold" label="Add todo" />
       </div>
 </template>
 
